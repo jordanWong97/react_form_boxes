@@ -33,6 +33,7 @@ function BoxList() {
       <NewBoxForm addItem={addItem} />
 
       {boxListData.map(box =>
+        //destructure box in 35 as {}
         <Box removeItem={removeItem} key={box.id}
           id={box.id}
           height={box.height}
